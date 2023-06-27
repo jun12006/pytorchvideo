@@ -99,7 +99,7 @@ class LabeledVideoPaths:
         )
         class_to_idx = {classes[i]: i for i in range(len(classes))}
         video_paths_and_label = make_dataset(
-            dir_path, class_to_idx, extensions=("mp4", "avi")
+            dir_path, class_to_idx, extensions=("mp4", "avi", "webm")
         )
         assert (
             len(video_paths_and_label) > 0
